@@ -84,9 +84,8 @@ public class LiveCoding2 {
 
         int passing = countPassing(scores);
 
-        
-        System.out.println("===== STATISTICAL INFORMATION =====");
         System.out.println();
+        System.out.println("===== STATISTICAL INFORMATION =====");
         System.out.println("------------------------------");
         System.out.println("Total Number of Scores: " + scores.length);
         System.out.println("Sum of Scores: " + sum);
