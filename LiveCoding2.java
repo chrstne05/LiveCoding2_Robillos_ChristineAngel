@@ -60,16 +60,15 @@ public class LiveCoding2 {
         System.out.println();
         System.out.println("===== ARRAY STATISTICS ANALYZER =====");
         System.out.print("Enter the count of students: ");
-        System.out.println();
         int count = input.nextInt();
         if (count <= 0) {
             System.out.println("Error: Number of students must be greater than 0.");
         }
-
+        System.out.println();
         int[] scores = new int[count];
 
         for (int i = 0; i < scores.length; i++) {
-
+            
             System.out.print("Enter score of student " + (i + 1) + ": ");
             scores[i] = input.nextInt();
         }
@@ -85,7 +84,6 @@ public class LiveCoding2 {
         int passing = countPassing(scores);
 
         System.out.println();
-        System.out.println("===== STATISTICAL INFORMATION =====");
         System.out.println("------------------------------");
         System.out.println("Total Number of Scores: " + scores.length);
         System.out.println("Sum of Scores: " + sum);
