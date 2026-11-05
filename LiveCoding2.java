@@ -59,7 +59,8 @@ public class LiveCoding2 {
         System.out.println();
         System.out.println();
         System.out.println("===== ARRAY STATISTICS ANALYZER =====");
-        System.out.print("Enter the count of scores: ");
+        System.out.print("Enter the count of students: ");
+        System.out.println();
         int count = input.nextInt();
         if (count <= 0) {
             System.out.println("Error: Number of students must be greater than 0.");
@@ -150,52 +151,36 @@ public class LiveCoding2 {
     }
 
     static double calculateAverage(int[] scores) {
-
         int sum = calculateSum(scores);
-
         return (double) sum / scores.length;
     }
 
     static int findHighest(int[] scores) {
-
         int highest = scores[0];
-
         for (int i = 1; i < scores.length; i++) {
-
             if (scores[i] > highest) {
                 highest = scores[i];
             }
         }
-
         return highest;
     }
 
     static int findLowest(int[] scores) {
-
         int lowest = scores[0];
-
         for (int i = 1; i < scores.length; i++) {
-
             if (scores[i] < lowest) {
                 lowest = scores[i];
             }
         }
-
         return lowest;
     }
-
     static int countPassing(int[] scores) {
-
         int count = 0;
-
         for (int i = 0; i < scores.length; i++) {
-
             if (scores[i] >= 75) {
                 count++;
             }
         }
-
         return count;
     }
-
 }
